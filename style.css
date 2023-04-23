@@ -1,79 +1,79 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: #262626;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #262626;
+  font-family: sans-serif;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 40%;
-    top: 20%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 40%;
+  top: 20%;
 }
 
 ul li {
-    display: block;
-    width: 240px;
-    height: 280px;
-    background: #ffff;
-    position: absolute;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    transform-origin: bottom center;
-    transform: rotate(10%) skew(-30deg);
-    transition: .5s;
+  display: block;
+  width: 240px;
+  height: 280px;
+  background: #ffff;
+  position: absolute;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  transform-origin: bottom center;
+  transform: rotate(10%) skew(-30deg);
+  transition: 0.5s;
 }
 
 ul li span {
-    display: block;
-    color: #ccc;
-    text-align: center;
-    font-size: 2em;
-    line-height: 280px;
+  display: block;
+  color: #ccc;
+  text-align: center;
+  font-size: 2em;
+  line-height: 280px;
 }
 
 ul li:nth-child(1) {
-    transform: rotate(10deg) skew(-30deg) translate(15px, 15px);
+  transform: rotate(10deg) skew(-30deg) translate(15px, 15px);
 }
 
 ul li:nth-child(2) {
-    transform: rotate(10deg) skew(-30deg) translate(0px, 0px);
+  transform: rotate(10deg) skew(-30deg) translate(0px, 0px);
 }
 
 ul li:nth-child(3) {
-    transform: rotate(10deg) skew(-30deg) translate(-15px, -15px);
+  transform: rotate(10deg) skew(-30deg) translate(-15px, -15px);
 }
 
 ul:hover li:nth-child(1) {
-    transform: rotate(5deg) skew(0deg) translate(200px, 0);
+  transform: rotate(5deg) skew(0deg) translate(200px, 0);
 }
 
 ul:hover li:nth-child(2) {
-    transform: rotate(0deg) skew(0deg) translate(0, 0);
+  transform: rotate(0deg) skew(0deg) translate(0, 0);
 }
 
 ul:hover li:nth-child(3) {
-    transform: rotate(-5deg) skew(0deg) translate(-200px, 0);
+  transform: rotate(-5deg) skew(0deg) translate(-200px, 0);
 }
 
 ul li::before {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 10px;
-    left: 0;
-    bottom: 0;
-    background: #262626;
-    transition: .5s;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 10px;
+  left: 0;
+  bottom: 0;
+  background: #262626;
+  transition: 0.5s;
 }
 
 ul li:hover::before {
-    left: 50%;
+  left: 50%;
 }
 
 ul li:hover::after {
-    right: 50%
+  right: 50%;
 }
